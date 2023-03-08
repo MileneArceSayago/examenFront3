@@ -7,14 +7,14 @@ function Form(){
     const [petColor, setPetColor] = useState("");
     const [petAge, setPetAge] = useState("");
     const [vet, setVet] = useState("");
-
+    const [isErrorPet, setIsErrorPet] = useState(false);
+    const [isShowCard, setIsShowCard] = useState(false);
 
     const onChangePetName = (e) => setPetName(e.target.value);
     const onChangePetColor = (e) => setPetColor(e.target.value);
     const onChangePetAge = (e) => setPetAge(e.target.value);
     const onChangeVet = (e) => setVet(e.target.value);
-    const [isErrorPet, setIsErrorPet] = useState(false);
-    const [isShowCard, setIsShowCard] = useState(false);
+
 
 
     const validatePetName = (petName) => {
